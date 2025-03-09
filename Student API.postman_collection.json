@@ -3,23 +3,23 @@
 		"_postman_id": "e7b045eb-42ff-435f-bd88-c2fae19e6d36",
 		"name": "Student API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "42600406"
+		"_exporter_id": "42600504"
 	},
 	"item": [
 		{
 			"name": "Get All Students",
 			"request": {
-				"auth": {
-					"type": "noauth"
+				"authorization": {
+					"type": "none"
 				},
-				"method": "GET",
+				"httpmethod": "GET",
 				"header": [],
-				"url": {
+				"endpoint": {
 					"raw": "{{base_url}}/student",
 					"host": [
 						"{{base_url}}"
 					],
-					"path": [
+					"route": [
 						"student"
 					]
 				}
@@ -29,17 +29,17 @@
 		{
 			"name": "Get Student by ID",
 			"request": {
-				"auth": {
-					"type": "noauth"
+				"authorization": {
+					"type": "none"
 				},
-				"method": "GET",
+				"httpmethod": "GET",
 				"header": [],
 				"url": {
 					"raw": "{{base_url}}/student/:id",
 					"host": [
 						"{{base_url}}"
 					],
-					"path": [
+					"route": [
 						"student",
 						":id"
 					],
@@ -56,10 +56,10 @@
 		{
 			"name": "Add Student",
 			"request": {
-				"auth": {
-					"type": "noauth"
+				"authorization": {
+					"type": "none"
 				},
-				"method": "POST",
+				"httpmethod": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -75,7 +75,7 @@
 					"host": [
 						"{{base_url}}"
 					],
-					"path": [
+					"route": [
 						"student"
 					]
 				}
@@ -85,10 +85,10 @@
 		{
 			"name": "Update Student",
 			"request": {
-				"auth": {
-					"type": "noauth"
+				"authorization": {
+					"type": "none"
 				},
-				"method": "PUT",
+				"httpmethod": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -104,7 +104,7 @@
 					"host": [
 						"{{base_url}}"
 					],
-					"path": [
+					"route": [
 						"student",
 						":id"
 					],
@@ -121,17 +121,17 @@
 		{
 			"name": "Delete Student",
 			"request": {
-				"auth": {
-					"type": "noauth"
+				"authorization": {
+					"type": "none"
 				},
-				"method": "DELETE",
+				"httpmethod": "DELETE",
 				"header": [],
 				"url": {
 					"raw": "{{base_url}}/student/:id",
 					"host": [
 						"{{base_url}}"
 					],
-					"path": [
+					"route": [
 						"student",
 						":id"
 					],
